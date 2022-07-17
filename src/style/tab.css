@@ -1,0 +1,15 @@
+li {
+  display: flex;
+  color: rgb(179, 179, 179);
+}
+
+li.active {
+  color: #000;
+  height: 100%;
+  transition: all 0.1s ease;
+  text-decoration: underline;
+}
+
+/* .tab02 li {
+  margin-right: 48px;
+} */

@@ -1,0 +1,228 @@
+/* 여기서부터 커스터마이징 */
+* {
+  transition: all 0.2s ease-out;
+}
+section {
+  overflow-x: hidden;
+}
+p {
+  font-family: Pretendard, sans-serif;
+  word-break: keep-all;
+}
+body {
+  overflow-x: hidden;
+}
+/* Mobile Screen */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+  .container_header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container_header {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .container_display {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1280px !important;
+  }
+  .container_header {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .container_display {
+    position: absolute;
+    bottom: 12.5%;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+:hover {
+  transition: all 0.3s ease-out;
+}
+
+li {
+  float: left;
+  list-style: none;
+}
+
+.typo-title {
+  word-break: keep-all;
+}
+.nt-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.res-mw-0 {
+  max-width: 640px;
+}
+
+.btn-0 {
+  transition: all 0.3s ease-out;
+}
+
+.btn-0:hover {
+  background-color: white;
+  color: #003af1;
+}
+
+.linear-wipe-1 {
+  background: linear-gradient(
+    to left,
+    #fff 20%,
+    #00ff81 40%,
+    #ffee00 60%,
+    rgb(255, 255, 255) 80%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+.linear-wipe-2 {
+  background: linear-gradient(
+    to right,
+    #000 20%,
+    #171717 40%,
+    #232323 60%,
+    rgb(0, 0, 0) 80%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+.linear-wipe-3 {
+  background: linear-gradient(
+    to left,
+    rgb(0, 255, 123) 20%,
+    rgb(28, 190, 47) 40%,
+    rgb(0, 255, 123) 60%,
+    rgb(0, 255, 123) 10%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+mark {
+  background: linear-gradient(to top, #ffff00 30%, transparent 30%);
+}
+
+.hideMenuNav {
+  display: none;
+}
+
+.showMenuNav {
+  overflow-y: hidden;
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: black;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dimmed {
+  background: rgb(3, 3, 3);
+  background: linear-gradient(
+    0deg,
+    rgba(3, 3, 3, 1) 0%,
+    rgba(3, 3, 3, 0.7) 32%,
+    rgba(0, 0, 0, 0.2) 82%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.card01 {
+  background: linear-gradient(315deg, rgb(0, 0, 0) 0%, rgb(40, 40, 40) 100%);
+  /* background: linear-gradient(315deg, rgb(255, 82, 220) 0%, rgb(255, 153, 0) 100%); */
+}
+
+.card02 {
+  background: linear-gradient(141deg, #0099ff 0%, rgb(0, 85, 255) 100%);
+}
+
+.card03 {
+  background: linear-gradient(141deg, #0099ff 0%, rgb(0, 85, 255) 100%);
+}
+
+.card04 {
+  background: linear-gradient(315deg, rgb(0, 0, 0) 0%, rgb(40, 40, 40) 100%);
+  /* background: linear-gradient(304deg, rgb(153, 0, 255) 0%, rgb(102, 0, 255) 100%); */
+}
+
+.apple {
+  background-image: url("../public/img/appstore.png");
+  background-size: cover;
+}
+
+.google {
+  background-image: url("../public/img/googleplay.png");
+  background-size: cover;
+}
+
+.dimmedCard {
+  background: rgb(8, 85, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 86, 255, 0.815) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.sec08Dimmed {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 13%,
+    rgba(255, 255, 255, 0.850577731092437) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
