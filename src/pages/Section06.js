@@ -1,5 +1,6 @@
 import React from "react";
 import TitleHeadline from "../components/TitleHeadline";
+import "../App.css";
 import { motion } from "framer-motion";
 
 const Section06 = () => {
@@ -11,68 +12,92 @@ const Section06 = () => {
     },
     onscreen: {
       y: 0,
-      opacity: 100,
+      opacity: 1,
     },
   };
 
   return (
-    <section>
-      <div className="container px-24 py-128 md:px-48 md:py-160 xl:px-0 xl:py-256">
-        <div className="mb-48 md:mb-96 xl:mb-128">
+    <section className="bg-black">
+      <div className="container px-24 pb-0 py-128 md:px-48 md:pt-160 xl:px-0 xl:pt-256">
+        <div className="mb-64 md:mb-96 xl:mb-128">
           <TitleHeadline
-            textcolor1="text-black"
-            textcolor2="text-black"
-            textcolor3="text-neutral-800"
-            c_headline1="어려웠던"
-            c_headline2="건강관리도 쉽게"
-            c_body1="생애 주기 관리는 반려동물의 체구와 나이에 기반하여 7가지 항목으로 관리방법을 안내합니다."
+            textalign="text-center"
+            textcolor1="text-white"
+            textcolor2="text-white"
+            textcolor3="text-neutral-500"
+            c_headline1="단 한번의 등록"
+            c_headline2="위대한 첫 걸음"
           />
         </div>
-        <div className="overflow-x-auto whitespace-nowrap md:hidden">
-          <div className="inline-block mr-24">
-            <img
-              className="w-256"
-              src="img/img_sec06_device_01.png"
-              alt=""
-            ></img>
-          </div>
-          <div className="inline-block">
-            <img
-              className="w-256"
-              src="img/img_sec06_device_02.png"
-              alt=""
-            ></img>
-          </div>
-        </div>
-        <motion.div
-          className="relative flex-col hidden md:flex md:flex-row"
-          initial="offscreen"
-          whileInView="onscreen"
-        >
-          <motion.div
-            className="px-24 basis-1/2"
-            variants={FadeUp}
-            transition={{ ease: "easeOut", dealy: 1, duration: 1 }}
-          >
-            <img
-              className="mx-auto w-400"
-              src="img/img_sec06_device_01.png"
-              alt=""
-            ></img>
-          </motion.div>
-          <motion.div
-            className="px-24 pt-64 basis-1/2"
-            variants={FadeUp}
-            transition={{ ease: "easeOut", dealy: 3, duration: 2 }}
-          >
-            <img
-              className="mx-auto w-400"
-              src="img/img_sec06_device_02.png"
-              alt=""
-            ></img>
-          </motion.div>
-        </motion.div>
       </div>
+      <motion.div
+        className="flex flex-row flex-wrap pb-128 md:pb-160 xl:pb-256"
+        initial="offscreen"
+        whileInView="onscreen"
+      >
+        <motion.div
+          className="h-auto w-100% md:w-50% xl:w-25% bg-bg01 basis-1/1 md:basis-1/2 xl:basis-1/4 relative"
+          variants={FadeUp}
+          transition={{ ease: "easeOut", dealy: 0, duration: 1 }}
+        >
+          <div className="absolute z-50 flex flex-col left-10% bottom-20% md:left-10% md:bottom-10% xl:left-15% xl:bottom-15%">
+            <p className="mb-8 font-bold text-white text-md2">
+              5분만에 등록완료
+            </p>
+            <p className="font-medium text-white text-tiny opacity-70">
+              타이핑 없이 터치로만 입력하세요.
+            </p>
+          </div>
+          <video
+            className="relative top-0 z-10 object-cover h-640 md:absolute md:h-full"
+            autoPlay
+            loop
+            playsInline
+            muted
+          >
+            <source src="video/ex.mp4" type="video/mp4" />
+          </video>
+        </motion.div>
+        <motion.div
+          className="h-auto w-100% md:w-50% xl:w-25% bg-bg01 basis-1/1 md:basis-1/2 xl:basis-1/4 relative"
+          variants={FadeUp}
+          transition={{ ease: "easeOut", dealy: 2, duration: 1 }}
+        >
+          <div className="absolute z-50 flex flex-col left-10% bottom-20% md:left-10% md:bottom-10% xl:left-15% xl:bottom-15%">
+            <p className="mb-8 font-bold text-white text-md2">알러지 선택</p>
+            <p className="font-medium text-white text-tiny opacity-70">
+              타이핑 없이 터치로만 입력하세요.
+            </p>
+          </div>
+          <img src="img/device02.png" alt=""></img>
+        </motion.div>
+        <motion.div
+          className="h-auto md:w-50% xl:w-25% basis-1/1 md:basis-1/2 xl:basis-1/4 relative"
+          variants={FadeUp}
+          transition={{ ease: "easeOut", dealy: 4, duration: 1 }}
+        >
+          <div className="absolute z-50 flex flex-col left-10% bottom-20% md:left-10% md:bottom-10% xl:left-15% xl:bottom-15%">
+            <p className="mb-8 font-bold text-white text-md2">기호성 선택</p>
+            <p className="font-medium text-white text-tiny opacity-70">
+              타이핑 없이 터치로만 입력하세요.
+            </p>
+          </div>
+          <img src="img/device04.png" alt=""></img>
+        </motion.div>
+        <motion.div
+          className="h-auto md:w-50% xl:w-25% basis-1/1 md:basis-1/2 xl:basis-1/4 relative"
+          variants={FadeUp}
+          transition={{ ease: "easeOut", dealy: 6, duration: 1 }}
+        >
+          <div className="absolute z-50 flex flex-col left-10% bottom-20% md:left-10% md:bottom-10% xl:left-15% xl:bottom-15%">
+            <p className="mb-8 font-bold text-white text-md2">15가지 고민</p>
+            <p className="font-medium text-white text-tiny opacity-70">
+              타이핑 없이 터치로만 입력하세요.
+            </p>
+          </div>
+          <img className="z-10" src="img/device03.png" alt=""></img>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

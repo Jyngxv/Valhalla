@@ -12,9 +12,9 @@ const Section01 = () => {
           <div className="mx-auto xl:px-0">
             <TitleDisplay
               textcolor1="text-white"
-              textcolor2="text-secondary"
-              c_display1="HYPER"
-              c_display2="PETSONALIZATION"
+              textcolor2="text-white"
+              c_display1="THE ANXIETY"
+              c_display2="IS OVER"
               c_body1="내 반려동물에게 딱 맞춘 커머스, 푸드"
             />
           </div>

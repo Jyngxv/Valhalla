@@ -6,9 +6,9 @@ const Section03 = () => {
   return (
     <section className="bg-black">
       <div className="container px-24 py-128 md:px-48 md:py-160 xl:px-0 xl:py-256">
-        <div className="flex flex-col lg:flex-row md:mb-0 xl:mb-128">
-          <div className="mb-64 md:mb-120 basis-1/2">
-            <div className="flex flex-col">
+        <div className="flex flex-col lg:flex-row md:mb-0 xl:mb-128 ">
+          <div className="flex mb-64 md:mb-120 xl:mb-0 basis-1/2">
+            <div className="flex flex-col my-auto">
               <div>
                 <TitleHeadline
                   textcolor1="text-white"

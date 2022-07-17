@@ -1,73 +1,74 @@
 import React from "react";
-import SliderSection04 from "../components/SliderSection04";
 import { motion } from "framer-motion";
 
 const Section04 = () => {
   // Famer Motion 정의
-  const lineUpToBottom = {
+  const leftToRight = {
     offscreen: {
-      height: 0,
+      x: -60,
       opacity: 0,
     },
     onscreen: {
-      height: 1200,
-      opacity: 100,
+      x: 0,
+      opacity: 1,
     },
   };
 
   return (
-    <section className="relative overflow-hidden bg-black">
-      <div className="container px-24 py-128 md:px-48 md:py-160 xl:px-0 xl:py-128">
-        <div className="flex flex-col overflow-hidden">
-          <div className="relative">
-            <div className="w-300 xl:w-[400px] mx-auto mb-48 xl:mb-0">
-              <div className="absolute left-0 right-0 z-20 mx-auto w-300 xl:w-[400px]">
-                <img src="../img/device0.png" alt="" />
-              </div>
-              <div className="z-10">
-                <SliderSection04 />
-              </div>
+    <section className="relative bg-black">
+      <div className="container px-24 py-128 md:px-48 md:py-160 xl:px-0 xl:py-256">
+        <div className="wrapper">
+          <div className="flex flex-col">
+            <div className="z-30 flex flex-row mb-48 md:mb-64 lg:mb-96 xl:mb-48">
+              <motion.div
+                className="bg-black xl:mb-128"
+                initial="offscreen"
+                whileInView="onscreen"
+              >
+                <motion.p
+                  className="font-bold leading-relaxed text-white text-md2 md:text-xl xl:text-2xl"
+                  variants={leftToRight}
+                  transition={{ duration: 0.2 }}
+                >
+                  푸드는 꿈같은 기술로서
+                </motion.p>
+                <motion.p
+                  className="font-bold leading-relaxed text-white text-md2 md:text-xl md:text-6xl xl:text-2xl"
+                  variants={leftToRight}
+                  transition={{ duration: 0.4 }}
+                >
+                  내 반려동물에게 딱 맞게
+                </motion.p>
+                <motion.p
+                  className="font-bold leading-relaxed text-white text-md2 md:text-xl md:text-6xl xl:text-2xl"
+                  variants={leftToRight}
+                  transition={{ duration: 0.6 }}
+                >
+                  고민을 해결해줍니다.
+                </motion.p>
+              </motion.div>
             </div>
-            <div className="absolute overflow-hidden md:top-0 md:left-0">
-              <p className="absolute text-md md:text-xl xl:text-9xl font-black text-center text-[#1a1a1a] w-100% hover:text-secondary font-Oswald uppercase ">
-                NOT YOUR FAULT
+            <div className="flex flex-col">
+              <div className="flex flex-row">
+                <p className="pl-8 mr-24 text-lg font-light text-white opacity-50">
+                  We call it
+                </p>
+                <div className="w-auto h-2 bg-white"></div>
+              </div>
+              <div className="h-2 w-100% linear-wipe-3 opacity-50 mb-24"></div>
+              <p className="tracking-wide text-white text-8xl md:text-7xl xl:text-11xl font-Bebas linear-wipe-0">
+                Hyper
               </p>
-              <p className="text-md md:text-xl font-regular text-[#1a1a1a] w-100% hover:text-secondary linear-wipe-2">
-                In Asia, there is a great demand on the global media enterprises
-                such as CJ E&M and Tencent includinglarge in-house agencies like
-                Dentsu, Hakuhodo and Cheil. They consume a massive music sources
-                to digital media, retail, event, exhibition, PR, outdoor and
-                sports marketing as well as broadcasting and printing media. We
-                exerted our best efforts to the localization for the large media
-                clients to use the marketing solution.In Asia, there is a{" "}
-                <span className="text-secondary">great</span> demand on the
-                global media enterprises such as CJ E&M and Tencent
-                includinglarge in-house agencies like Dentsu, Hakuhodo and
-                Cheil. They consume a massive music sources to digital media,
-                retail, event, exhibition, PR, outdoor and sports marketing as
-                well as broadcasting and printing media. We exerted our best
-                efforts to the localization for the large media clients to use
-                the marketing solution.In Asia, there is a great demand on the
-                global media enterprises such as CJ E&M and Tencent
-                includinglarge in-house agencies like Dentsu, Hakuhodo and
-                Cheil. They consume a{" "}
-                <span className="!text-secondary">massive</span> music sources
-                to digital media, retail, event, exhibition, PR, outdoor and
-                sports marketing as well as broadcasting and printing media. We
-                exerted our best efforts to the localization for the large media
-                clients to use the marketing solution.
+              <p className="text-3xl text-white md:text-7xl xl:text-11xl font-Bebas linear-wipe-0 mt-[-24px] md:mt-0">
+                Petsonalization
+              </p>
+              <p className="text-3xl text-white md:text-7xl xl:text-11xl font-Bebas linear-wipe-0 mt-[-8px] md:mt-0">
+                Commerce
               </p>
             </div>
           </div>
         </div>
       </div>
-      <motion.div
-        className="absolute w-8 top-0 left-50% bg-secondary z-60 overflow-auto"
-        variants={lineUpToBottom}
-        initial="offscreen"
-        whileInView="onscreen"
-        transition={{ duration: 1.5 }}
-      ></motion.div>
     </section>
   );
 };

@@ -90,7 +90,22 @@ li {
   background-color: white;
   color: #003af1;
 }
-
+.linear-wipe-0 {
+  background: linear-gradient(
+    to left,
+    #fff 20%,
+    #00ffae 40%,
+    #057a59 60%,
+    rgb(255, 255, 255) 80%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: ` transparent;
+  animation: shine 2s linear infinite;
+}
 .linear-wipe-1 {
   background: linear-gradient(
     to left,

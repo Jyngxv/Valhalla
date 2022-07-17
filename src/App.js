@@ -13,6 +13,9 @@ import Section09 from "./pages/Section09";
 import Section10 from "./pages/Section10";
 import Section11 from "./pages/Section11";
 import Section12 from "./pages/Section12";
+import Section13 from "./pages/Section13";
+import Section14 from "./pages/Section14";
+import Section15 from "./pages/Section15";
 import Footer from "./components/Footer";
 
 function App() {
@@ -31,6 +34,9 @@ function App() {
       <Section10 />
       <Section11 />
       <Section12 />
+      <Section13 />
+      <Section14 />
+      <Section15 />
       <Footer />
     </div>
   );

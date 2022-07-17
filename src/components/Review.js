@@ -10,7 +10,7 @@ const Review = (props) => {
   const content = classnames("font-regular text-base lg:text-md1");
   return (
     <motion.div
-      className="p-32 shadow-lg first-letter:mb-24 md:p-40 rounded-24 xl:rounded-none"
+      className="p-32 mb-24 shadow-2xl md:p-40 rounded-24 xl:rounded-none"
       whileHover={{ scale: 1.05 }}
     >
       <div className="flex flex-row mb-24">

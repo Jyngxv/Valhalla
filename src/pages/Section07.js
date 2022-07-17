@@ -1,51 +1,44 @@
 import React from "react";
 import TitleHeadline from "../components/TitleHeadline";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import SliderSection05 from "../components/SliderSection05";
+import "../App.css";
 
 const Section07 = () => {
-  // Famer Motion 정의
-  const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0.1, 1], [0.1, 2.1]);
-
   return (
-    <section className="relative overflow-y-hidden">
-      <div className="container px-24 xl:pb-0 py-128 md:px-48 md:py-128 xl:px-0 xl:py-128">
-        <div className="mb-32 xl:mb-64">
+    <section className="bg-black">
+      <div className="container px-24 pb-0 py-128 md:px-48 md:pt-160 xl:px-0 xl:pt-256">
+        <div className="mb-64 md:mb-96 xl:mb-128">
           <TitleHeadline
-            textcolor1="text-black"
-            textcolor2="text-black"
-            textcolor3="text-neutral-800"
-            c_headline1="이렇게 쉽게"
-            c_headline2="수의사를 만날줄이야"
-            c_body1="생애 주기 관리는 반려동물의 체구와 나이에 기반하여 7가지 항목으로 관리방법을 안내합니다."
+            textcolor1="text-white"
+            textcolor2="text-secondary"
+            textcolor3="text-neutral-500"
+            c_headline1="사료부터 용품까지"
+            c_headline2="빈틈없는 맞춤 추천"
+            c_body1="사료에서 끝나는 것이 아닌간식, 영양제, 용품까지 섬세하게 고민없는 쇼핑을 도와줍니다."
+            c_body2="여기에 얼마나 먹여야하는지까지도, 모든 것에 대한 고민이 사라지죠."
           />
         </div>
       </div>
-      <motion.div className="absolute top-0 left-0 h-full md:hidden z-[-1] object-cover">
-        <video
-          className="object-cover w-auto h-full"
-          autoPlay
-          loop
-          playsInline
-          muted
-        >
-          <source src="video/large_2x.mp4" type="video/mp4" />
-        </video>
-      </motion.div>
-      <motion.div
-        className="hidden md:block md:h-640 md:mt-[-120px] xl:mt-0"
-        style={{ scale }}
-      >
-        <video
-          className="w-screen my-auto bg-fixed bg-center bg-cover py-512"
-          autoPlay
-          loop
-          playsInline
-          muted
-        >
-          <source src="video/large_2x.mp4" type="video/mp4" />
-        </video>
-      </motion.div>
+      <div className="pl-24 overflow-x-auto pb-96 whitespace-nowrap md:hidden">
+        <div className="inline-block mr-24">
+          <img className="w-256" src="img/screen02.png" alt=""></img>
+        </div>
+        <div className="inline-block mr-24">
+          <img className="w-256" src="img/screen02.png" alt=""></img>
+        </div>
+        <div className="inline-block mr-24">
+          <img className="w-256" src="img/screen02.png" alt=""></img>
+        </div>
+        <div className="inline-block mr-24">
+          <img className="w-256" src="img/screen02.png" alt=""></img>
+        </div>
+        <div className="inline-block mr-24 ">
+          <img className="w-256" src="img/screen02.png" alt=""></img>
+        </div>
+      </div>
+      <div className="hidden md:block md:pb-160 xl:pb-256">
+        <SliderSection05 />
+      </div>
     </section>
   );
 };

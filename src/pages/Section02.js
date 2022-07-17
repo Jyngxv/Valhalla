@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Section01 = () => {
+const Section02 = () => {
   // Famer Motion 정의
   const leftToRight = {
     offscreen: {
@@ -10,17 +10,17 @@ const Section01 = () => {
     },
     onscreen: {
       x: 0,
-      opacity: 100,
+      opacity: 1,
     },
   };
   const lineLeftToRight = {
     offscreen2: {
       x: -900,
-      opacity: 10,
+      opacity: 0.1,
     },
     onscreen2: {
       x: 150,
-      opacity: 100,
+      opacity: 1,
     },
   };
 
@@ -36,21 +36,21 @@ const Section01 = () => {
                 whileInView="onscreen"
               >
                 <motion.p
-                  className="text-3xl font-bold text-white md:text-6xl xl:text-7xl"
+                  className="text-3xl font-bold text-white md:text-6xl xl:text-6xl"
                   variants={leftToRight}
                   transition={{ duration: 0.2 }}
                 >
                   어렵고
                 </motion.p>
                 <motion.p
-                  className="text-3xl font-bold text-white md:text-6xl xl:text-7xl"
+                  className="text-3xl font-bold text-white md:text-6xl xl:text-6xl"
                   variants={leftToRight}
                   transition={{ duration: 0.4 }}
                 >
                   힘들었던
                 </motion.p>
                 <motion.p
-                  className="text-3xl font-bold text-white md:text-6xl xl:text-7xl linear-wipe-1"
+                  className="text-3xl font-bold text-white md:text-6xl xl:text-6xl"
                   variants={leftToRight}
                   transition={{ duration: 0.6 }}
                 >
@@ -100,7 +100,7 @@ const Section01 = () => {
         </div>
       </div>
       <motion.div
-        className="absolute h-8 bg-white md:w-50% lg:w-65% xl:w-60% right-0 md:top-[150px] lg:top-[390px] xl:top-[538px]"
+        className="absolute h-8 bg-white md:w-50% lg:w-65% xl:w-60% right-0 md:top-[390px] lg:top-[390px] xl:top-[490px]"
         variants={lineLeftToRight}
         initial="offscreen2"
         whileInView="onscreen2"
@@ -110,4 +110,4 @@ const Section01 = () => {
   );
 };
 
-export default Section01;
+export default Section02;

@@ -3,11 +3,11 @@ import classnames from "classnames";
 // linear - wipe;
 const TitleDisplay = (props) => {
   const display1 = classnames(
-    "xl:ml-0 xl:pl-0 xl:rotate-0 text-center xl:text-left text-8xl md:text-7xl xl:text-8xl font-Bebas font-extrabold",
+    "xl:ml-0 xl:pl-0 xl:rotate-0 text-center xl:text-left text-8xl md:text-7xl xl:text-8xl font-Bebas font-extrabold tracking-wide",
     props.textcolor1
   );
   const display2 = classnames(
-    "mt-[-36px] xl:mt-[-24px] xl:bg-transparent xl:linear-wipe text-primary xl:text-secondary xl:rotate-0 text-center xl:text-left text-3xl md:text-7xl xl:text-8xl font-extrabold xl:mb-0 mb-8 mt-[-16px] font-Bebas"
+    "mt-[-36px] xl:mt-[-24px] xl:bg-transparent xl:linear-wipe text-primary xl:text-secondary xl:rotate-0 text-center xl:text-left text-3xl md:text-7xl xl:text-8xl font-extrabold xl:mb-0 mb-8 mt-[-16px] font-Bebas tracking-wide"
   );
   const body1 = classnames(
     "text-center xl:text-left text-base md:text-md2 xl:text-md3 font-medium text-white whitespace-pre-wrap"
