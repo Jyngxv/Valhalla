@@ -1,9 +1,9 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "../style/swiper.css";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Autoplay } from "swiper";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import '../style/swiper.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Autoplay } from 'swiper';
 
 const SliderSection04 = () => {
   return (
@@ -18,13 +18,22 @@ const SliderSection04 = () => {
       className="slider02"
     >
       <SwiperSlide>
-        <img src="img/screen06.png" alt=""></img>
+        <img src="img/p_screen_summary_01.jpg" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/screen07.png" alt=""></img>
+        <img src="img/p_screen_summary_0.jpg" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/screen08.png" alt=""></img>
+        <img src="img/p_screen_summary_05.jpg" alt=""></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="img/p_screen_summary_0.jpg" alt=""></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="img/p_screen_summary_03.jpg" alt=""></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="img/p_screen_summary_04.jpg" alt=""></img>
       </SwiperSlide>
     </Swiper>
   );

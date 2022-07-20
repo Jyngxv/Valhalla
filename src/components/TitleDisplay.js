@@ -1,20 +1,17 @@
-import React from "react";
-import classnames from "classnames";
+import React from 'react';
+import classnames from 'classnames';
 // linear - wipe;
 const TitleDisplay = (props) => {
   const display1 = classnames(
-    "xl:ml-0 xl:pl-0 xl:rotate-0 text-center xl:text-left text-8xl md:text-7xl xl:text-8xl font-Bebas font-extrabold tracking-wide",
+    'xl:ml-0 xl:pl-0 xl:rotate-0 text-center xl:text-left text-5xl md:text-8xl lg:text-9xl xl:text-8xl font-Bebas font-extrabold lg:tracking-wide',
     props.textcolor1
   );
   const display2 = classnames(
-    "mt-[-36px] xl:mt-[-24px] xl:bg-transparent xl:linear-wipe text-primary xl:text-secondary xl:rotate-0 text-center xl:text-left text-3xl md:text-7xl xl:text-8xl font-extrabold xl:mb-0 mb-8 mt-[-16px] font-Bebas tracking-wide"
+    'mt-[-36px] xl:mt-[-24px] xl:bg-transparent xl:linear-wipe-1 xl:rotate-0 text-center xl:text-left text-5xl md:text-8xl xl:text-8xl font-extrabold lg:text-9xl xl:mb-0 mb-8 mt-[-16px] font-Bebas lg:tracking-wide',
+    props.textcolor2
   );
-  const body1 = classnames(
-    "text-center xl:text-left text-base md:text-md2 xl:text-md3 font-medium text-white whitespace-pre-wrap"
-  );
-  const body2 = classnames(
-    "text-center xl:text-left text-base md:text-base xl:text-md2 font-bold text-white whitespace-pre-wrap"
-  );
+  const body1 = classnames('opacity-70 text-center xl:text-left text-base md:text-md2 xl:text-md2 font-bold text-white whitespace-pre-wrap');
+  const body2 = classnames('text-center xl:text-left text-base md:text-base xl:text-md2 font-bold text-white whitespace-pre-wrap');
 
   return (
     <div className="pb-48 md:pb-64 xl:pb-64 lg:pb-32">

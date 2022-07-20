@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Section04 = () => {
   // Famer Motion 정의
@@ -16,21 +16,17 @@ const Section04 = () => {
 
   return (
     <section className="relative bg-black">
-      <div className="container px-24 py-128 md:px-48 md:py-160 xl:px-0 xl:py-256">
+      <div className="container px-24 py-128 md:px-48 md:py-160 xl:px-0 xl:py-192">
         <div className="wrapper">
           <div className="flex flex-col">
             <div className="z-30 flex flex-row mb-48 md:mb-64 lg:mb-96 xl:mb-48">
-              <motion.div
-                className="bg-black xl:mb-128"
-                initial="offscreen"
-                whileInView="onscreen"
-              >
+              <motion.div className="bg-black xl:mb-128" initial="offscreen" whileInView="onscreen">
                 <motion.p
                   className="font-bold leading-relaxed text-white text-md2 md:text-xl xl:text-2xl"
                   variants={leftToRight}
                   transition={{ duration: 0.2 }}
                 >
-                  푸드는 꿈같은 기술로서
+                  꿈같은 기술이
                 </motion.p>
                 <motion.p
                   className="font-bold leading-relaxed text-white text-md2 md:text-xl md:text-6xl xl:text-2xl"
@@ -44,28 +40,36 @@ const Section04 = () => {
                   variants={leftToRight}
                   transition={{ duration: 0.6 }}
                 >
-                  고민을 해결해줍니다.
+                  고민을 해결
                 </motion.p>
               </motion.div>
             </div>
-            <div className="flex flex-col">
+            <motion.div className="flex flex-col" initial="offscreen" whileInView="onscreen">
               <div className="flex flex-row">
-                <p className="pl-8 mr-24 text-lg font-light text-white opacity-50">
-                  We call it
-                </p>
-                <div className="w-auto h-2 bg-white"></div>
+                <p className="pl-8 font-light text-white opacity-50 md:mb-16 text-md3 md:text-lg">We call it</p>
               </div>
-              <div className="h-2 w-100% linear-wipe-3 opacity-50 mb-24"></div>
-              <p className="tracking-wide text-white text-8xl md:text-7xl xl:text-11xl font-Bebas linear-wipe-0">
+              <motion.p
+                className="tracking-wide text-white text-9xl md:text-7xl xl:text-11xl font-Bebas linear-wipe-0"
+                variants={leftToRight}
+                transition={{ duration: 0.5, delay: 0 }}
+              >
                 Hyper
-              </p>
-              <p className="text-3xl text-white md:text-7xl xl:text-11xl font-Bebas linear-wipe-0 mt-[-24px] md:mt-0">
+              </motion.p>
+              <motion.p
+                className="text-4xl text-white md:text-7xl xl:text-11xl font-Bebas linear-wipe-0 mt-[-24px] md:mt-0"
+                variants={leftToRight}
+                transition={{ duration: 0.5, delay: 0.25 }}
+              >
                 Petsonalization
-              </p>
-              <p className="text-3xl text-white md:text-7xl xl:text-11xl font-Bebas linear-wipe-0 mt-[-8px] md:mt-0">
+              </motion.p>
+              <motion.p
+                className="text-4xl text-white md:text-7xl xl:text-11xl font-Bebas linear-wipe-0 mt-[-20px] md:mt-0"
+                variants={leftToRight}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
                 Commerce
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
           </div>
         </div>
       </div>

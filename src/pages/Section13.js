@@ -1,12 +1,12 @@
-import React from "react";
-import TitleHeadline from "../components/TitleHeadline";
-import Review from "../components/Review";
+import React from 'react';
+import TitleHeadline from '../components/TitleHeadline';
+import Review from '../components/Review';
 
 const Section13 = () => {
   return (
-    <section className=" xl:py-256">
+    <section className="xl:py-192">
       <div className="container px-24 py-128 md:px-48 md:py-128 xl:px-0 xl:py-0">
-        <div className="mb-64 md:mb-96 xl:mb-64">
+        <div className="mb-48 md:mb-96 xl:mb-64">
           <TitleHeadline
             textcolor1="text-black"
             textcolor2="text-black"
@@ -78,13 +78,7 @@ const Section13 = () => {
             />
           </div>
           <div className="flex flex-col lg:mx-12 lg:basis-1/3">
-            <Review
-              store="google"
-              reviewer="C**"
-              date="21 NOV"
-              title=""
-              content="설명도 잘해주시고 앱도 다른곳과 다르게 상세해서 좋았습니다."
-            />
+            <Review store="google" reviewer="C**" date="21 NOV" title="" content="설명도 잘해주시고 앱도 다른곳과 다르게 상세해서 좋았습니다." />
             <Review
               store="apple"
               reviewer="양**"

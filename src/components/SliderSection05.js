@@ -1,9 +1,9 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "../style/swiper.css";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Autoplay, Navigation } from "swiper";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import '../style/swiper.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Autoplay, Navigation } from 'swiper';
 
 const SliderSection05 = () => {
   return (
@@ -24,7 +24,7 @@ const SliderSection05 = () => {
           slidesPerView: 3,
         },
         1536: {
-          slidesPerView: 4.5,
+          slidesPerView: 4,
         },
         2000: {
           slidesPerView: 6,
