@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TitleHeadline from '../components/TitleHeadline';
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
-
+import HorizontalScroll from 'react-scroll-horizontal';
 const Section12 = () => {
   // Famer Motion 정의
   const FadeUp = {
@@ -15,6 +15,10 @@ const Section12 = () => {
       opacity: 1,
     },
   };
+  const cards = [...new Array(10)].map((x, i) => ({
+    name: `card ${i}`,
+    img: 'https://source.unsplash.com/random',
+  }));
 
   return (
     <section className=" xl:py-256">
@@ -90,15 +94,22 @@ const Section12 = () => {
           </motion.div>
         </motion.div> */}
       </div>
-      <div className="flex overflow-x-auto">
-        <div className="overflow-x-scroll snap-x">
-          <div className="flex-shrink-0 bg-black w-640 h-1280"></div>
-          <div className="flex-shrink-0 bg-primary w-640 h-1280"></div>
-          <div className="flex-shrink-0 bg-black w-640 h-1280"></div>
-          <div className="flex-shrink-0 bg-black w-640 h-1280"></div>
-          <div className="flex-shrink-0 bg-black w-640 h-1280"></div>
-        </div>
-      </div>
+
+      <HorizontalScroll
+        pageLock={false}
+        reverseScroll={true}
+        style={{ width: `100%`, height: `600px` }}
+        //config        = {{ stiffness: int, damping: int }}
+        //className     = { string }
+        //animValues    = { int }
+      >
+        {cards.map((card) => (
+          <div className="w-400">
+            <img src={card.img} alt="" />
+            <p>{card.name}</p>
+          </div>
+        ))}
+      </HorizontalScroll>
     </section>
   );
 };

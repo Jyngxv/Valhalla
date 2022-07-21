@@ -69,7 +69,7 @@ const Section02 = () => {
         </div>
       </div>
       <motion.div
-        className="absolute h-8 bg-white md:w-50% lg:w-65% xl:w-60% right-0 md:top-[390px] lg:top-[390px] xl:top-[425px]"
+        className="absolute h-8 bg-white md:w-50% lg:w-65% xl:w-55% right-0 md:top-[390px] lg:top-[390px] xl:top-[392px]"
         variants={lineLeftToRight}
         initial="offscreen2"
         whileInView="onscreen2"

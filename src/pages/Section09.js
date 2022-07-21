@@ -26,7 +26,7 @@ const Section09 = () => {
           <source src="video/large_2x.mp4" type="video/mp4" />
         </video>
       </motion.div>
-      <motion.div className="hidden md:block md:h-640 md:mt-[-120px] xl:mt-128" style={{ scale }}>
+      <motion.div className="hidden md:block md:h-640 md:mt-[-120px] xl:mt-0" style={{ scale }}>
         <video className="w-screen my-auto bg-fixed bg-center bg-cover py-512" autoPlay loop playsInline muted>
           <source src="video/large_2x.mp4" type="video/mp4" />
         </video>
