@@ -54,7 +54,7 @@ const Section12 = () => {
                 </p>
                 <p className="text-white font-regular text-md1">나도 모르게 무수히 쌓이는 펫 커머스 최대 적립금</p>
               </div>
-              <motion.div className="absolute top-0 left-320 w-640 mx-auto h-100% z-60 bg-black" variants={FadeUp} transition={{ delay: 0.5, duration: 3 }}>
+              <motion.div className="absolute top-0 left-360 w-640 mx-auto h-100% z-60 bg-black" variants={FadeUp} transition={{ delay: 0.5, duration: 2 }}>
                 <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" />
               </motion.div>
             </div>
@@ -87,6 +87,7 @@ const Section12 = () => {
               <motion.div className="absolute top-0 left-0 w-100% h-100% z-60" variants={FadeUp}>
                 <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" />
               </motion.div>
+            </div>
             </div>
           </HorizontalScroll>
         </div>
