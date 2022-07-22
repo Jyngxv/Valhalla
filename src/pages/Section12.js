@@ -46,7 +46,7 @@ const Section12 = () => {
                 </div>
               </div>
             </div>
-            <div className="relative bg-black h-560 w-1280">
+            <div className="relative bg-black h-560 w-1440">
               <div className="absolute z-50 pl-128 top-50% translate-y-[-50%]">
                 <p className="font-extrabold text-white text-7xl">결제금액의</p>
                 <p className="mb-24 font-extrabold text-white text-7xl">
@@ -58,7 +58,7 @@ const Section12 = () => {
                 <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" />
               </motion.div>
             </div>
-            <div className="relative bg-black h-560 w-640">
+            <div className="relative bg-black h-560 w-1440">
               <div className="absolute z-50 w-640 top-70% translate-y-[-50%] text-center">
                 <p className="font-extrabold text-white font-Bebas text-8xl linear-wipe-5">WELCOME</p>
                 <p className="mb-8 font-extrabold text-white text-8xl font-Bebas mt-[-32px]">COUPON PACK</p>

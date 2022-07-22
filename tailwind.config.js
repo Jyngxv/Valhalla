@@ -112,6 +112,7 @@ module.exports = withAnimations({
         960: '960px',
         1024: '1024px',
         1280: '1280px',
+        1440: '1440px',
       },
       borderRadius: {
         8: '8px',
