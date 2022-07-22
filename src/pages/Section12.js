@@ -88,7 +88,6 @@ const Section12 = () => {
                 <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" />
               </motion.div>
             </div>
-            </div>
           </HorizontalScroll>
         </div>
       </div>
