@@ -91,13 +91,7 @@ li {
   color: #003af1;
 }
 .linear-wipe-0 {
-  background: linear-gradient(
-    to left,
-    #fff 20%,
-    #00ffae 40%,
-    #057a59 60%,
-    rgb(255, 255, 255) 80%
-  );
+  background: linear-gradient(to left, #fff 20%, #00ffae 40%, #057a59 60%, rgb(255, 255, 255) 80%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -107,13 +101,7 @@ li {
   animation: shine 2s linear infinite;
 }
 .linear-wipe-1 {
-  background: linear-gradient(
-    to left,
-    #fff 20%,
-    #00ff81 40%,
-    #ffee00 60%,
-    rgb(255, 255, 255) 80%
-  );
+  background: linear-gradient(to left, #fff 20%, #00ff81 40%, #ffee00 60%, rgb(255, 255, 255) 80%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -128,13 +116,7 @@ li {
   }
 }
 .linear-wipe-2 {
-  background: linear-gradient(
-    to right,
-    #000 20%,
-    #171717 40%,
-    #232323 60%,
-    rgb(0, 0, 0) 80%
-  );
+  background: linear-gradient(to right, #000 20%, #171717 40%, #232323 60%, rgb(0, 0, 0) 80%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -144,13 +126,7 @@ li {
   animation: shine 2s linear infinite;
 }
 .linear-wipe-3 {
-  background: linear-gradient(
-    to left,
-    rgb(0, 255, 123) 20%,
-    rgb(28, 190, 47) 40%,
-    rgb(0, 255, 123) 60%,
-    rgb(0, 255, 123) 10%
-  );
+  background: linear-gradient(to left, rgb(0, 255, 123) 20%, rgb(28, 190, 47) 40%, rgb(0, 255, 123) 60%, rgb(0, 255, 123) 10%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -159,6 +135,28 @@ li {
   -webkit-text-fill-color: transparent;
   animation: shine 2s linear infinite;
 }
+.linear-wipe-4 {
+  background: linear-gradient(to left, rgb(255, 196, 0) 20%, rgb(255, 234, 0) 40%, rgb(255, 196, 0) 60%, rgb(255, 196, 0) 10%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+.linear-wipe-5 {
+  background: linear-gradient(to left, rgb(255, 255, 255) 20%, rgb(183, 227, 255) 40%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 10%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
 mark {
   background: linear-gradient(to top, #ffff00 30%, transparent 30%);
 }
@@ -186,13 +184,7 @@ mark {
 
 .dimmed {
   background: rgb(3, 3, 3);
-  background: linear-gradient(
-    0deg,
-    rgba(3, 3, 3, 1) 0%,
-    rgba(3, 3, 3, 0.7) 32%,
-    rgba(0, 0, 0, 0.2) 82%,
-    rgba(0, 0, 0, 0.1) 100%
-  );
+  background: linear-gradient(0deg, rgba(3, 3, 3, 1) 0%, rgba(3, 3, 3, 0.7) 32%, rgba(0, 0, 0, 0.2) 82%, rgba(0, 0, 0, 0.1) 100%);
 }
 
 .card01 {
@@ -214,30 +206,21 @@ mark {
 }
 
 .apple {
-  background-image: url("../public/img/appstore.png");
+  background-image: url('../public/img/appstore.png');
   background-size: cover;
 }
 
 .google {
-  background-image: url("../public/img/googleplay.png");
+  background-image: url('../public/img/googleplay.png');
   background-size: cover;
 }
 
 .dimmedCard {
   background: rgb(8, 85, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(8, 86, 255, 0.815) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(0deg, rgba(8, 86, 255, 0.815) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .sec08Dimmed {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 13%,
-    rgba(255, 255, 255, 0.850577731092437) 40%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 13%, rgba(255, 255, 255, 0.850577731092437) 40%, rgba(255, 255, 255, 0) 100%);
 }

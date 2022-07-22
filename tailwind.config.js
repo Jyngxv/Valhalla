@@ -7,9 +7,8 @@ module.exports = withAnimations({
     fontFamily: {
       Oswald: ['Oswald', 'sans-seif'],
       Pretendard: ['Pretendard', 'sans-serif'],
-      Raleway: ['Raleway', 'sans-serif'],
+      Libre: ['Libre Baskerville', 'serif'],
       Bebas: ['Bebas Neue', 'cursive'],
-      Forma: ['forma-djr-display', 'sans-serif'],
     },
     fontSize: {
       xs1: ['12px', '1.4'],
@@ -26,7 +25,7 @@ module.exports = withAnimations({
       '4xl': ['64px', '1.4'],
       '5xl': ['72px', '1.2'],
       '6xl': ['80px', '1.2'],
-      '7xl': ['96px', '1'],
+      '7xl': ['96px', '1.1'],
       '8xl': ['128px', '1.2'],
       '9xl': ['160px', '1'],
       '10xl': ['196px', '1'],

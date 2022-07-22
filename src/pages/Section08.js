@@ -15,16 +15,16 @@ const Section08 = () => {
     },
   };
   const BgChange = {
-    offscreen: {
+    onscreen: {
       background: '#000000',
     },
-    onscreen: {
+    offscreen: {
       background: '#ffffff',
     },
   };
 
   return (
-    <motion.section initial="offscreen" whileInView="onscreen" variants={BgChange} transition={{ duration: 1, delay: 0.25 }}>
+    <motion.section initial="offscreen" whileInView="onscreen" variants={BgChange} transition={{ duration: 4, delay: 1 }}>
       <div className="container px-24 pt-128 md:px-48 md:py-160 xl:px-0 xl:py-192">
         <div className="mb-48 md:mb-96 xl:mb-128">
           <TitleHeadline
