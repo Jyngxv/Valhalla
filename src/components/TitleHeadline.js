@@ -24,11 +24,11 @@ const TitleHeadline = (props) => {
     props.textalign
   );
   const body1 = classnames(
-    "text-base md:text-base xl:text-md2 font-regular  whitespace-pre-wrap",
+    "text-base md:text-base xl:text-md2 font-medium  whitespace-pre-wrap",
     props.textcolor3
   );
   const body2 = classnames(
-    "text-base md:text-base xl:text-md2 font-regular  whitespace-pre-wrap",
+    "text-base md:text-base xl:text-md2 font-medium  whitespace-pre-wrap",
     props.textcolor3
   );
   return (

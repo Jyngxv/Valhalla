@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import TitleHeadline from '../components/TitleHeadline';
-import { motion } from 'framer-motion';
-import CountUp from 'react-countup';
-import HorizontalScroll from 'react-scroll-horizontal';
-import Spline from '@splinetool/react-spline';
+import React, { useEffect, useRef } from "react";
+import TitleHeadline from "../components/TitleHeadline";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import HorizontalScroll from "react-scroll-horizontal";
+import Spline from "@splinetool/react-spline";
 
 const Section12 = () => {
   // Famer Motion 정의
@@ -19,15 +19,20 @@ const Section12 = () => {
   };
   const BgChange = {
     offscreen: {
-      background: '#ffffff',
+      background: "#ffffff",
     },
     onscreen: {
-      background: '#000000',
+      background: "#000000",
     },
   };
 
   return (
-    <motion.section className="relative h-screen" initial="offscreen" whileInView="onscreen" variants={BgChange}>
+    <motion.section
+      className="relative h-screen"
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={BgChange}
+    >
       <div className="relative h-100%">
         <div className="flex flex-col h-100% items-center justify-center">
           <HorizontalScroll
@@ -39,7 +44,9 @@ const Section12 = () => {
             <div className="flex bg-black h-560">
               <div className="pl-128 flex h-100% items-center justify-start">
                 <div className="flex flex-row">
-                  <p className="mr-24 text-base font-extrabold text-white font-Bebas">Scroll</p>
+                  <p className="mr-24 text-base font-extrabold text-white font-Bebas">
+                    Scroll
+                  </p>
                   <div className="flex items-center justify-start">
                     <p className="h-2 bg-white w-128"></p>
                   </div>
@@ -52,41 +59,79 @@ const Section12 = () => {
                 <p className="mb-24 font-extrabold text-white text-7xl">
                   <span className="linear-wipe-4">2%</span> 적립
                 </p>
-                <p className="text-white font-regular text-md1">나도 모르게 무수히 쌓이는 펫 커머스 최대 적립금</p>
+                <p className="text-white font-regular text-md1">
+                  나도 모르게 무수히 쌓이는 펫 커머스 최대 적립금
+                </p>
               </div>
-              <motion.div className="absolute top-0 left-360 w-640 mx-auto h-100% z-60 bg-black" variants={FadeUp} transition={{ delay: 0.5, duration: 2 }}>
+              <motion.div
+                className="absolute top-0 left-360 w-640 mx-auto h-100% z-60 bg-black"
+                variants={FadeUp}
+                transition={{ delay: 0.5, duration: 2 }}
+              >
                 <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" />
               </motion.div>
             </div>
-            <div className="relative bg-black h-560 w-1440">
+            <div className="relative mx-auto bg-black h-560 w-1440">
               <div className="absolute z-50 w-640 top-70% translate-y-[-50%] text-center">
-                <p className="font-extrabold text-white font-Bebas text-8xl linear-wipe-5">WELCOME</p>
-                <p className="mb-8 font-extrabold text-white text-8xl font-Bebas mt-[-32px]">COUPON PACK</p>
-                <p className="text-white font-regular text-md1">나도 모르게 무수히 쌓이는 펫 커머스 최대 적립금</p>
+                <p className="font-extrabold text-white opacity-70 font-Bebas text-8xl linear-wipe-5">
+                  WELCOME
+                </p>
+                <p className="mb-8 font-extrabold text-white text-8xl font-Bebas mt-[-32px]">
+                  COUPON PACK
+                </p>
+                <p className="text-white font-regular text-md1">
+                  나도 모르게 무수히 쌓이는 펫 커머스 최대 적립금
+                </p>
               </div>
               <div className="absolute top-0 left-0 w-640 mx-auto h-100% z-60 bg-black">
                 <Spline scene="https://prod.spline.design/Oj1v0NLohF7pAt6E/scene.splinecode" />
               </div>
             </div>
-            <div className="relative text-center bg-black h-560 w-960">
-              <div className="">
-                <p className="text-white opacity-50 text-md2 font-regular">적립</p>
-                <p className="text-2xl font-bold text-white">결제금액 2% 적립</p>
-                {/* <p className="text-6xl font-bold text-white">2% 적립</p> */}
+            <div className="relative bg-black h-560 w-1440">
+              <div className="absolute z-50 pl-128 left-20% top-50% translate-y-[-50%]">
+                <p className="font-extrabold text-white text-7xl">언제나</p>
+                <p className="mb-24 font-extrabold text-white text-7xl">
+                  <span className="linear-wipe-4">무료</span>배송
+                </p>
+                <p className="text-white font-regular text-md1">
+                  나도 모르게 무수히 쌓이는 펫 커머스 최대 적립금
+                </p>
               </div>
-              <motion.div className="absolute top-0 left-0 w-100% h-100% z-60" variants={FadeUp}>
-                {/* <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" /> */}
-              </motion.div>
-            </div>
-            <div className="relative text-center bg-black h-560 w-960">
-              <div className="">
-                <p className="text-white opacity-50 text-md2 font-regular">적립</p>
-                <p className="text-2xl font-bold text-white">결제금액 2% 적립</p>
-                {/* <p className="text-6xl font-bold text-white">2% 적립</p> */}
-              </div>
-              <motion.div className="absolute top-0 left-0 w-100% h-100% z-60" variants={FadeUp}>
+              <motion.div
+                className="absolute top-0 left-0 w-640 mx-auto h-100% z-60 bg-black"
+                variants={FadeUp}
+                transition={{ delay: 0.5, duration: 2 }}
+              >
                 <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" />
               </motion.div>
+            </div>
+            <div className="relative bg-black h-560 w-1440">
+              <div className="absolute z-50 w-640 top-30% translate-y-[-50%] text-center">
+                <p className="font-extrabold text-white opacity-70 font-Bebas text-8xl linear-wipe-5">
+                  PET
+                </p>
+                <p className="mb-8 font-extrabold text-white text-8xl font-Bebas mt-[-32px]">
+                  COUPON
+                </p>
+                <p className="text-white font-regular text-md1">
+                  마이 펫을 등록하면 쿠폰을 추가로 더 드려요
+                </p>
+              </div>
+              <div className="absolute top-0 left-0 w-640 mx-auto h-100% z-60 bg-black">
+                <Spline scene="https://prod.spline.design/Oj1v0NLohF7pAt6E/scene.splinecode" />
+              </div>
+            </div>
+            <div className="flex bg-black h-560">
+              <div className="pl-128 flex h-100% items-center justify-start">
+                <div className="flex flex-col">
+                  <p className="mr-24 text-base font-extrabold text-white font-Bebas">
+                    Scroll
+                  </p>
+                  <div className="flex items-center justify-start">
+                    <p className="w-2 bg-white h-128"></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </HorizontalScroll>
         </div>
