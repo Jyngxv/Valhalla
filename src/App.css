@@ -147,7 +147,29 @@ li {
 }
 
 .linear-wipe-5 {
-  background: linear-gradient(to left, rgb(255, 255, 255) 20%, rgb(183, 227, 255) 40%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 10%);
+  background: linear-gradient(to left, rgb(196, 196, 196) 20%, rgb(255, 255, 255) 40%, rgb(196, 196, 196) 60%, rgb(196, 196, 196) 10%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+.linear-wipe-6 {
+  background: linear-gradient(to left, rgb(107, 255, 117) 20%, rgb(0, 255, 153) 40%, rgb(0107, 255, 117) 60%, rgb(107, 255, 117) 10%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+.linear-wipe-7 {
+  background: linear-gradient(to left, rgb(0, 166, 255) 20%, rgb(0, 38, 255) 40%, rgb(0, 166, 255) 60%, rgb(0, 166, 255) 10%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;

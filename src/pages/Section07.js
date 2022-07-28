@@ -13,7 +13,7 @@ const Section07 = () => {
             textcolor2="text-white"
             textcolor3="text-neutral-500"
             c_headline1="사료부터 용품까지"
-            c_headline2="빈틈없는 맞춤 추천"
+            c_headline2="인공지능 추천"
             c_body1="사료, 간식, 영양제, 용품까지 나의 고민을 완벽히 이해한 맞춤형 추천, 거기에 가장 잘 맞는 상품들만 모아서 추천해주는 패키지까지."
             // c_body2="여기에 얼마나 먹여야하는지까지도, 모든 것에 대한 고민이 사라지죠."
           />

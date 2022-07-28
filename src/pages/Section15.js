@@ -8,7 +8,7 @@ const Section15 = () => {
         <div className="flex flex-row">
           <div className="flex flex-col">
             <div className="basis-2/3 md:basis-1/2">
-              <TitleHeadline textcolor1="text-black" textcolor2="text-black" c_headline1="우리의 방식으로" c_headline2="WE ARE" />
+              <TitleHeadline textcolor1="text-black" textcolor2="text-black" c_headline1="우리의 방식으로" c_headline2="테크 컬쳐" />
               <button className="font-medium text-left bg-white py-14 xl:py-16 xl:text-base text-primary backdrop-blur-md rounded-8 xl:rounded-full hover:text-black">
                 <a href="https://www.notion.so/pood/2ba504ad6d42438b8c64d23a9ed24e69" target="_blank" rel="noreferrer">
                   자세히 알아보기

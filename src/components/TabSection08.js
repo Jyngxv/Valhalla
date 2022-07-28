@@ -36,18 +36,20 @@ class TabSection08 extends React.Component {
     return (
       <div className="flex flex-col w-100% md:w-100% tab02 overflow-x-auto">
         <div className="mb-32 md:mx-auto md:mb-48 lg:mb-64 xl:mb-96">
-          <ul className="flex py-16 overflow-x-scroll flex-nowrap whitespace-nowrap tabul">
+          <ul className="flex justify-center py-16 overflow-x-scroll flex-nowrap whitespace-nowrap">
             <li className={`${this.state.menu === 0 ? 'active' : ''}`} onClick={() => this.changeMenu(0)}>
-              <p className="font-bold leading-loose cursor-pointer text-md1 md:mr-24 md:text-md3 xl:text-md3 xl:mr-24 xl:hover:text-black">오늘만 할인</p>
+              <p className="mr-16 text-base font-bold leading-loose cursor-pointer md:mr-24 md:text-md3 xl:text-md3 xl:mr-24 xl:hover:text-black">
+                오늘만 할인
+              </p>
             </li>
             <li className={`${this.state.menu === 1 ? 'active' : ''}`} onClick={() => this.changeMenu(1)}>
-              <p className="font-bold leading-loose cursor-pointer text-md1 md:mr-24 md:text-md3 xl:text-md3 xl:mr-24 xl:hover:text-black">푸드 배송</p>
+              <p className="mr-16 text-base font-bold leading-loose cursor-pointer md:mr-24 md:text-md3 xl:text-md3 xl:mr-24 xl:hover:text-black">푸드 배송</p>
             </li>
             <li className={`${this.state.menu === 2 ? 'active' : ''}`} onClick={() => this.changeMenu(2)}>
-              <p className="font-bold leading-loose cursor-pointer text-md1 md:mr-24 md:text-md3 xl:text-md3 xl:mr-24 xl:hover:text-black">랭킹</p>
+              <p className="mr-16 text-base font-bold leading-loose cursor-pointer md:mr-24 md:text-md3 xl:text-md3 xl:mr-24 xl:hover:text-black">랭킹</p>
             </li>
             <li className={`${this.state.menu === 3 ? 'active' : ''}`} onClick={() => this.changeMenu(3)}>
-              <p className="font-bold leading-loose cursor-pointer text-md1 md:mr-24 md:text-md3 xl:mr-0 xl:text-md3 hover:text-black">포토 어워즈</p>
+              <p className="text-base font-bold leading-loose cursor-pointer md:mr-24 md:text-md3 xl:mr-0 xl:text-md3 hover:text-black">포토 어워즈</p>
             </li>
           </ul>
         </div>

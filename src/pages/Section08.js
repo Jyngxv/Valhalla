@@ -24,7 +24,7 @@ const Section08 = () => {
   };
 
   return (
-    <motion.section initial="offscreen" whileInView="onscreen" variants={BgChange} transition={{ duration: 3, delay: 1 }}>
+    <motion.section initial="offscreen" whileInView="onscreen" variants={BgChange} transition={{ duration: 1 }}>
       <div className="container px-24 pt-128 md:px-48 md:py-160 xl:px-0 xl:py-192">
         <div className="mb-48 md:mb-96 xl:mb-128">
           <TitleHeadline

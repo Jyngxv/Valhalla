@@ -27,8 +27,8 @@ const Section12 = () => {
   };
 
   return (
-    <motion.section className="relative h-screen" initial="offscreen" whileInView="onscreen" variants={BgChange}>
-      <div className="relative h-100%">
+    <motion.section className="relative overflow-y-hidden md:h-screen" initial="offscreen" whileInView="onscreen" variants={BgChange}>
+      <div className="relative h-100% hidden md:block">
         <div className="flex flex-col h-100% items-center justify-center">
           <HorizontalScroll
             reverseScroll={true}
@@ -36,7 +36,7 @@ const Section12 = () => {
             // config        = {{ stiffness: int, damping: int }}
             animValues={1}
           >
-            <div className="flex bg-black h-560">
+            <motion.div className="flex bg-black h-560" initial="offscreen" whileInView="onscreen">
               <div className="pl-128 flex h-100% items-center justify-start">
                 <div className="flex flex-row">
                   <p className="mr-24 text-base font-extrabold text-white font-Bebas">Scroll</p>
@@ -45,50 +45,118 @@ const Section12 = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="relative bg-black h-560 w-1440">
+            </motion.div>
+            <div className="relative bg-black h-560 w-1280">
               <div className="absolute z-50 pl-128 top-50% translate-y-[-50%]">
-                <p className="font-extrabold text-white text-7xl">결제금액의</p>
+                <p className="font-extrabold leading-snug text-white text-7xl">믿을 수 없는</p>
+                <p className="mb-24 font-extrabold text-white text-7xl">
+                  <span className="linear-wipe-4">푸드만의 혜택</span>
+                </p>
+                <p className="font-medium text-white text-sm2">오른쪽으로 넘어가며 확인해보세요</p>
+              </div>
+              <motion.div
+                className="absolute top-0 left-360 w-960 mx-auto h-100% z-60 bg-primary"
+                variants={FadeUp}
+                transition={{ delay: 0.5, duration: 2 }}
+              ></motion.div>
+            </div>
+            <div className="relative bg-black h-560 w-1024">
+              <div className="absolute z-50 pl-128 top-50% translate-y-[-50%]">
+                <p className="font-extrabold leading-snug text-white text-7xl">결제금액</p>
                 <p className="mb-24 font-extrabold text-white text-7xl">
                   <span className="linear-wipe-4">2%</span> 적립
                 </p>
-                <p className="text-white font-regular text-md1">나도 모르게 무수히 쌓이는 펫 커머스 최대 적립금</p>
+                <p className="font-medium text-white text-sm2">엄청난 적립률로 나도 모르게 쌓이는 포인트를 경험하세요</p>
               </div>
               <motion.div className="absolute top-0 left-360 w-640 mx-auto h-100% z-60 bg-black" variants={FadeUp} transition={{ delay: 0.5, duration: 2 }}>
                 <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" />
               </motion.div>
             </div>
-            <div className="relative bg-black h-560 w-1440">
-              <div className="absolute z-50 w-640 top-70% translate-y-[-50%] text-center">
-                <p className="font-extrabold text-white font-Bebas text-8xl linear-wipe-5">WELCOME</p>
-                <p className="mb-8 font-extrabold text-white text-8xl font-Bebas mt-[-32px]">COUPON PACK</p>
-                <p className="text-white font-regular text-md1">나도 모르게 무수히 쌓이는 펫 커머스 최대 적립금</p>
+            <div className="relative bg-black h-560 w-1024">
+              <div className="absolute z-50 pl-128 top-50% translate-y-[-50%]">
+                <p className="font-extrabold leading-snug text-white text-7xl">신규고객</p>
+                <p className="mb-24 font-extrabold text-white text-7xl">
+                  <span className="linear-wipe-5">쿠폰팩</span>
+                </p>
+                <p className="font-medium text-white text-sm2">30일의 넉넉한 유효기간, 7장의 쿠폰팩으로 부담없이 쇼핑하세요</p>
               </div>
-              <div className="absolute top-0 left-0 w-640 mx-auto h-100% z-60 bg-black">
+              <motion.div className="absolute top-0 left-360 w-640 mx-auto h-100% z-60 bg-black" variants={FadeUp} transition={{ delay: 0.5, duration: 2 }}>
                 <Spline scene="https://prod.spline.design/Oj1v0NLohF7pAt6E/scene.splinecode" />
-              </div>
-            </div>
-            <div className="relative text-center bg-black h-560 w-960">
-              <div className="">
-                <p className="text-white opacity-50 text-md2 font-regular">적립</p>
-                <p className="text-2xl font-bold text-white">결제금액 2% 적립</p>
-                {/* <p className="text-6xl font-bold text-white">2% 적립</p> */}
-              </div>
-              <motion.div className="absolute top-0 left-0 w-100% h-100% z-60" variants={FadeUp}>
-                {/* <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" /> */}
               </motion.div>
             </div>
-            <div className="relative text-center bg-black h-560 w-960">
-              <div className="">
-                <p className="text-white opacity-50 text-md2 font-regular">적립</p>
-                <p className="text-2xl font-bold text-white">결제금액 2% 적립</p>
-                {/* <p className="text-6xl font-bold text-white">2% 적립</p> */}
+            <div className="relative bg-black h-560 w-1024">
+              <div className="absolute z-50 pl-128 top-50% translate-y-[-50%]">
+                <p className="font-extrabold leading-snug text-white text-7xl">무조건</p>
+                <p className="mb-24 font-extrabold text-white text-7xl">
+                  <span className="linear-wipe-6">무료</span>배송
+                </p>
+                <p className="font-medium text-white text-sm2">배송비 맞추려고 신경쓰지 마세요. 푸드에서는 무료배송이에요</p>
               </div>
-              <motion.div className="absolute top-0 left-0 w-100% h-100% z-60" variants={FadeUp}>
-                <Spline scene="https://prod.spline.design/CcTrADUWFgqEhA89/scene.splinecode" />
+              <motion.div className="absolute top-0 left-360 w-640 mx-auto h-100% z-60 bg-black" variants={FadeUp} transition={{ delay: 0.5, duration: 2 }}>
+                <Spline scene="https://prod.spline.design/STfpVTTq5asZKUQz/scene.splinecode" />
+              </motion.div>
+            </div>
+            <div className="relative bg-black h-560 w-1280">
+              <div className="absolute z-50 pl-128 top-50% translate-y-[-50%]">
+                <p className="font-extrabold leading-snug text-white text-7xl">펫 등록</p>
+                <p className="mb-24 font-extrabold text-white text-7xl">
+                  추가 <span className="linear-wipe-7">쿠폰</span>
+                </p>
+                <p className="font-medium text-white text-sm2">내 반려동물을 등록하고 추가 쿠폰을 받아보세요</p>
+              </div>
+              <motion.div className="absolute top-0 left-360 w-640 mx-auto h-100% z-60 bg-black" variants={FadeUp} transition={{ delay: 0.5, duration: 2 }}>
+                <Spline scene="https://prod.spline.design/yGu8kbt7F25Sh4yO/scene.splinecode" />
               </motion.div>
             </div>
           </HorizontalScroll>
+        </div>
+      </div>
+      <div className="block overflow-hidden md:hidden">
+        <div className="flex flex-col py-128">
+          <div className="py-64">
+            <div className="flex justify-center overflow-hidden">
+              <Spline scene="https://prod.spline.design/7Tex0gSTjbG3wUMX/scene.splinecode" />
+            </div>
+            <div className="text-center">
+              <p className="text-xl font-bold leading-tight text-white">결제 금액</p>
+              <p className="text-xl font-bold leading-tight text-white">
+                <span className="linear-wipe-4">2% </span>적립
+              </p>
+            </div>
+          </div>
+          <div className="py-64">
+            <div className="flex justify-center overflow-hidden">
+              <Spline scene="https://prod.spline.design/sR0qRgckwSIwBzhA/scene.splinecode" />
+            </div>
+            <div className="text-center">
+              <p className="text-xl font-bold leading-tight text-white">신규고객</p>
+              <p className="text-xl font-bold leading-tight text-white">
+                <span className="linear-wipe-5">쿠폰팩</span>
+              </p>
+            </div>
+          </div>
+          <div className="py-64">
+            <div className="flex justify-center overflow-hidden">
+              <Spline scene="https://prod.spline.design/ItEvt8Tlu47-o2Av/scene.splinecode" />
+            </div>
+            <div className="text-center">
+              <p className="text-xl font-bold leading-tight text-white">무조건</p>
+              <p className="text-xl font-bold leading-tight text-white">
+                <span className="linear-wipe-6">무료</span>배송
+              </p>
+            </div>
+          </div>
+          <div className="py-64">
+            <div className="flex justify-center overflow-hidden">
+              <Spline scene="https://prod.spline.design/a2Sxw8-V7bspcQtg/scene.splinecode" />
+            </div>
+            <div className="text-center">
+              <p className="text-xl font-bold leading-tight text-white">반려동물 등록</p>
+              <p className="text-xl font-bold leading-tight text-white">
+                <span className="linear-wipe-7">추가 쿠폰</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </motion.section>

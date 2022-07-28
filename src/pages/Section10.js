@@ -4,7 +4,7 @@ import TitleHeadline from '../components/TitleHeadline';
 const Section10 = () => {
   return (
     <section className="relative overflow-y-hidden">
-      <div className="container px-24 pb-64 xl:pb-0 pt-128 md:px-48 md:py-128 xl:px-0 xl:py-192">
+      <div className="container px-24 pb-64 xl:pb-0 pt-128 md:px-48 md:pt-128 xl:px-0 xl:py-192">
         <div className="xl:mb-96 xl:w-50%">
           <TitleHeadline
             textcolor1="text-black"
