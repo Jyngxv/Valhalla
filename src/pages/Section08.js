@@ -1,6 +1,6 @@
-import React from "react";
-import TitleHeadline from "../components/TitleHeadline";
-import { motion } from "framer-motion";
+import React from 'react';
+import TitleHeadline from '../components/TitleHeadline';
+import { motion } from 'framer-motion';
 
 const Section08 = () => {
   // Famer Motion 정의
@@ -16,24 +16,15 @@ const Section08 = () => {
   };
   const BgChange = {
     onscreen: {
-      background: "#ffffff",
+      background: '#ffffff',
     },
     offscreen: {
-      background: "#000000",
+      background: '#000000',
     },
   };
 
   return (
-<<<<<<< HEAD
     <motion.section initial="offscreen" whileInView="onscreen" variants={BgChange} transition={{ duration: 1 }}>
-=======
-    <motion.section
-      initial="offscreen"
-      whileInView="onscreen"
-      variants={BgChange}
-      transition={{ duration: 1 }}
-    >
->>>>>>> b0374c560da001c2b66796e6f7317229ebb268ed
       <div className="container px-24 pt-128 md:px-48 md:py-160 xl:px-0 xl:py-192">
         <div className="mb-48 md:mb-96 xl:mb-128">
           <TitleHeadline
@@ -45,32 +36,12 @@ const Section08 = () => {
             c_body1="생애주기 관리와 고민관리를 통해 어려웠던 건강관리에 대한 솔루션을 받아보세요."
           />
         </div>
-        <motion.div
-          className="relative flex-col hidden md:flex md:flex-row"
-          initial="offscreen"
-          whileInView="onscreen"
-        >
-          <motion.div
-            className="px-24 basis-1/2"
-            variants={FadeUp}
-            transition={{ ease: "easeOut", dealy: 1, duration: 1 }}
-          >
-            <img
-              className="mx-auto w-400"
-              src="img/p_device_healthcare_01.png"
-              alt=""
-            ></img>
+        <motion.div className="relative flex-col hidden md:flex md:flex-row" initial="offscreen" whileInView="onscreen">
+          <motion.div className="px-24 basis-1/2" variants={FadeUp} transition={{ ease: 'easeOut', dealy: 1, duration: 1 }}>
+            <img className="mx-auto w-400" src="img/p_device_healthcare_01.png" alt=""></img>
           </motion.div>
-          <motion.div
-            className="px-24 pt-64 basis-1/2"
-            variants={FadeUp}
-            transition={{ ease: "easeOut", dealy: 3, duration: 2 }}
-          >
-            <img
-              className="mx-auto w-400"
-              src="img/p_device_healthcare_02.png"
-              alt=""
-            ></img>
+          <motion.div className="px-24 pt-64 basis-1/2" variants={FadeUp} transition={{ ease: 'easeOut', dealy: 3, duration: 2 }}>
+            <img className="mx-auto w-400" src="img/p_device_healthcare_02.png" alt=""></img>
           </motion.div>
         </motion.div>
       </div>
