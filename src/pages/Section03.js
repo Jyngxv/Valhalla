@@ -1,90 +1,63 @@
-import React, { Suspense } from 'react';
-import TitleHeadline from '../components/TitleHeadline';
+import React from 'react';
 import { motion } from 'framer-motion';
-import Spline from '@splinetool/react-spline';
+import '../App.css';
+import useModal from '../components/useModal';
+import Modal from '../components/Modal';
+import { useCallback } from 'react';
 
 const Section03 = () => {
-  // const scaleMinToMax = {
-  //   offscreen: {
-  //     scale: 0,
-  //     opacity: 0,
-  //   },
-  //   onscreen: {
-  //     scale: 1,
-  //     opacity: 1,
-  //   },
-  // };
-  const Spline = React.lazy(() => import('@splinetool/react-spline'));
+  const FadeUp = {
+    offscreen: {
+      y: 70,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+  const [modalOption, showModal] = useModal();
+  const onClick = useCallback(() => {
+    showModal(
+      true,
+      '푸드 알고리즘은 가장 과학적인 방법에 기반하고 있습니다. 수의학에 기본이 되는 NRC, AAFCO, FEDIAF등 국제 기관의 연구 자료와 논문을 토대로 설계하였습니다. 반려동물의 기본이되는 체중정보, 품종, 중성화여부, 나이를 기반으로 분석하고 여기에 기호성, 알러지, 보호자의 고민 정보를 결합하여 복합적으로 내 반려동물을 이해합니다. 수십만 가지의 데이터를 통해 분석해내는 시간은 단 5초도 걸리지 않을만큼 기술의 진보를 이루어냈습니다. 또한 푸드 알고리즘은 서울대학교 수의과대학과 공동 연구를 진행하고 있어 단순한 기술을 넘어 과학을 담았습니다.',
+      null
+    );
+  });
   return (
-    <section className="relative bg-black">
-      <div className="relative w-100% h-screen md:h-960">
-        <div className="absolute z-50 top-50% left-50% w-full translate-x-[-50%] translate-y-[-50%]">
-          <p className="text-3xl font-extrabold leading-snug text-center text-white md:text-6xl lg:text-7xl xl:text-8xl">언젠가 꿈꿔왔던</p>
-          <p className="mb-24 text-3xl font-extrabold text-center text-white md:mb-0 md:mb-48 md:text-6xl lg:text-7xl xl:text-8xl">
-            <span className="text-secondary">기술</span>이 여기에
-          </p>
-          <div className="flex justify-center">
-            <div>
-              <ul>
-                <li>
-                  <img className="mr-32 opacity-50 md:mr-40 pacity-50 h-36 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-snu.png" alt="" />
-                </li>
-                <li>
-                  <img className="mr-32 opacity-50 md:mr-40 h-36 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-aafco.png" alt="" />
-                </li>
-                <li>
-                  <img className="mr-32 opacity-50 md:mr-40 h-36 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-fediaf.png" alt="" />
-                </li>
-                <li>
-                  <img className="opacity-50 h-36 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-nrc.png" alt="" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* <p className="font-medium text-center text-white text-sm2 w-40% mx-auto leading-snug">
-            푸드 알고리즘은 가장 과학적인 방법에 기반하고 있습니다. 수의학에 기본이 되는 NRC, AAFCO, FEDIAF등 국제 기관의 연구 자료와 논문을 토대로 설계하여
-            서울대학교 수의과대학과 공동 연구를 진행하고 있습니다.
-          </p> */}
+    <section className="relative flex justify-center h-screen overflow-y-hidden">
+      <motion.div className="container w-100% my-auto py-auto" initial="offscreen" whileInView="onscreen" viewport={{ once: true }}>
+        <motion.p
+          className="flex justify-center text-3xl font-extrabold leading-relaxed text-left text-white md:text-7xl lg:text-7xl xl:text-8xl"
+          variants={FadeUp}
+          transition={{ duration: 2 }}
+        >
+          <span className="linear-wipe-7">꿈같은 기술 </span> 이
+        </motion.p>
+        <motion.p
+          className="flex justify-center mb-24 text-3xl font-extrabold text-left text-white md:mb-32 md:text-7xl md:leading-tight lg:text-7xl xl:text-8xl"
+          variants={FadeUp}
+          transition={{ duration: 2, delay: 1 }}
+        >
+          <span className="linear-wipe-3"></span>바로 여기에
+        </motion.p>
+        <div className="flex justify-center mb-36">
+          <button
+            className="flex justify-center px-32 py-12 text-base font-medium text-white border rounded-full opacity-80 border-primary hover:opacity-100 z-[888]"
+            onClick={onClick}
+          >
+            알고리즘 알아보기
+          </button>
         </div>
-        <div className="absolute z-10 object-cover w-screen h-screen md:h-960">
-          <video className="flex justify-start object-cover w-screen h-screen md:h-960" autoPlay loop playsInline muted>
-            <source src="video/ex4.mp4" type="video/mp4" />
+        <Modal modalOption={modalOption} />
+        <div className="">
+          <div className="absolute top-0 left-0 w-screen h-screen dimmed02 z-[-1]"></div>
+          <video autoPlay className="hidden md:block nt-video z-[-2]" loop muted>
+            <source src="video/p_video_eight.mp4"></source>
           </video>
-          {/* <Suspense fallback={<div>최지인 로딩중</div>}>
-            <Spline scene="https://prod.spline.design/ioxkKtRLpMnO4taC/scene.splinecode" />
-          </Suspense> */}
+          <div className="md:hidden absolute top-0 left-0 z-[-2] w-screen h-screen bg-center bg-cover bg-technology"></div>
         </div>
-        {/* <div className="">
-          <div className="absolute z-50 max-w-1280">
-            <p className="font-bold leading-snug text-white text-8xl">언젠가 꿈꿔왔던</p>
-            <p className="mb-48 font-bold text-white text-8xl">
-              <span className="text-secondary">기술</span>이 여기에
-            </p>
-            <p className="font-medium text-white text-sm2 w-30%">
-              푸드 알고리즘은 가장 과학적인 방법에 기반하고 있습니다. 수의학에 기본이 되는 NRC, AAFCO, FEDIAF등 국제 기관의 연구 자료와 논문을 토대로 설계하여
-              서울대학교 수의과대학과 공동 연구를 진행하고 있습니다.
-            </p>
-          </div>
-          <div className="flex justify-center pt-400">
-            <div className="py-24">
-              <ul>
-                <li>
-                  <img className="mr-32 opacity-50 h-36 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-snu.png" alt="" />
-                </li>
-                <li>
-                  <img className="mr-32 opacity-50 h-36 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-aafco.png" alt="" />
-                </li>
-                <li>
-                  <img className="mr-32 opacity-50 h-36 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-fediaf.png" alt="" />
-                </li>
-                <li>
-                  <img className="mr-32 opacity-50 h-36 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-nrc.png" alt="" />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> */}
-      </div>
+      </motion.div>
     </section>
   );
 };

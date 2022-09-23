@@ -12,7 +12,7 @@ function Count() {
         setError(null);
         setPetcount(null);
         setLoading(true);
-        const response = await axios.get('https://test.pood.pet/api/pood/main/home/pet-total-count');
+        const response = await axios.get('https://poodone.com/api/pood/main/home/pet-total-count');
         setPetcount(response.data);
       } catch (e) {
         setError(e);
@@ -26,7 +26,7 @@ function Count() {
   if (error) return <div>Error</div>;
   if (!petCount) return null;
 
-  return <CountUp end={petCount.dogCount + petCount.catCount} separator="," enableScrollSpy duration={1.5} />;
+  return <CountUp end={(petCount.dogCount + petCount.catCount) * 10} separator="," enableScrollSpy duration={1.5} />;
 }
 
 export default Count;

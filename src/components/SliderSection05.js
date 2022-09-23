@@ -36,19 +36,19 @@ const SliderSection05 = () => {
       className="slider01"
     >
       <SwiperSlide>
-        <img src="img/screen01.png" alt=""></img>
+        <img className="rounded-24" src="img/p_screen_store_1.png" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/screen02.png" alt=""></img>
+        <img className="rounded-24" src="img/p_screen_store_2.png" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/screen03.png" alt=""></img>
+        <img className="rounded-24" src="img/p_screen_store_3.png" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/screen04.png" alt=""></img>
+        <img className="rounded-24" src="img/p_screen_store_4.png" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/screen05.png" alt=""></img>
+        <img className="rounded-24" src="img/p_screen_store_5.png" alt=""></img>
       </SwiperSlide>
     </Swiper>
   );

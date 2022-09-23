@@ -1,6 +1,5 @@
-import React, { useState, Compoent } from 'react';
+import React from 'react';
 import '../style/tab.css';
-import { tab } from '@testing-library/user-event/dist/tab';
 import { motion } from 'framer-motion';
 
 const menuList = {

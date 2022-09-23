@@ -3,14 +3,14 @@ import classnames from 'classnames';
 // linear - wipe;
 const TitleDisplay = (props) => {
   const display1 = classnames(
-    'xl:ml-0 xl:pl-0 xl:rotate-0 text-center xl:text-left text-5xl md:text-8xl lg:text-9xl xl:text-8xl font-Bebas font-extrabold lg:tracking-wide',
+    'xl:ml-0 xl:pl-0 xl:rotate-0 text-center xl:text-left text-4xl md:text-8xl lg:text-9xl xl:text-8xl font-Bebas font-extrabold lg:tracking-wide tracking-tight',
     props.textcolor1
   );
   const display2 = classnames(
-    'mt-[-36px] xl:mt-[-24px] xl:bg-transparent xl:linear-wipe-1 xl:rotate-0 text-center xl:text-left text-5xl md:text-8xl xl:text-8xl font-extrabold lg:text-9xl xl:mb-0 mb-8 mt-[-16px] font-Bebas lg:tracking-wide',
+    'mt-[-28px] xl:mt-[-24px] xl:bg-transparent xl:linear-wipe-1 xl:rotate-0 text-center xl:text-left text-4xl md:text-8xl xl:text-8xl font-extrabold lg:text-9xl xl:mb-0 md:mb-8 font-Bebas lg:tracking-wide tracking-tight',
     props.textcolor2
   );
-  const body1 = classnames('opacity-70 text-center xl:text-left text-base md:text-md2 xl:text-md2 font-bold text-white whitespace-pre-wrap');
+  const body1 = classnames('opacity-70 text-center xl:text-left text-sm2 md:text-md2 xl:text-md2 font-regular md:font-bold text-white whitespace-pre-wrap');
   const body2 = classnames('text-center xl:text-left text-base md:text-base xl:text-md2 font-bold text-white whitespace-pre-wrap');
 
   return (

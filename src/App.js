@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Section01 from './pages/Section01';
@@ -37,8 +35,8 @@ function App() {
       <Section11 />
       <Section12 />
       <Section13 />
-      <Section14 />
       <Section15 />
+      <Section14 />
       <Footer />
     </div>
   );

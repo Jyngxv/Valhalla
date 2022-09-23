@@ -18,22 +18,25 @@ const SliderSection04 = () => {
       className="slider02"
     >
       <SwiperSlide>
-        <img src="img/p_screen_summary_01.jpg" alt=""></img>
+        <img src="img/p_screen_summary_0.png" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/p_screen_summary_0.jpg" alt=""></img>
+        <img src="img/p_screen_summary_1.png" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/p_screen_summary_05.jpg" alt=""></img>
+        <img src="img/p_screen_summary_2.png" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/p_screen_summary_0.jpg" alt=""></img>
+        <img src="img/p_screen_summary_3.png" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/p_screen_summary_03.jpg" alt=""></img>
+        <img src="img/p_screen_summary_4.png" alt=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src="img/p_screen_summary_04.jpg" alt=""></img>
+        <img src="img/p_screen_summary_5.png" alt=""></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="img/p_screen_summary_6.png" alt=""></img>
       </SwiperSlide>
     </Swiper>
   );

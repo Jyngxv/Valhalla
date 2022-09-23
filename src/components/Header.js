@@ -4,11 +4,11 @@ import '../App.css';
 const Header = () => {
   return (
     <div>
-      <nav className="absolute z-20 w-full bg-transparent">
+      <nav className="absolute z-[999] w-full ">
         <div className="px-24 mx-auto bg-transparent md:px-48 xl:px-0 xl:w-1280">
-          <div className="flex flex-row flex-wrap py-32 md:py-48 xl:py-48">
+          <div className="flex flex-row flex-wrap py-32 md:py-48 xl:py-24">
             <div className="flex">
-              <img className="flex h-40 my-auto md:h-64 xl:h-48 logo" src="img/Logo.png" alt="" />
+              <img className="flex h-40 my-auto md:h-64 xl:h-48 logo" src="img/logo.png" alt="" />
             </div>
             <div className="flex flex-row-reverse items-center grow">
               <ul className="hidden my-auto font-bold md:block xl:flex">
@@ -19,7 +19,7 @@ const Header = () => {
                 </li>
                 <li className="hidden font-medium text-white xl:block md:text-base xl:text-tiny hover:opacity-100">
                   <a
-                    className="px-24 py-16 font-bold text-white rounded-full bg-primary hover:border-white hover:bg-white hover:text-primary"
+                    className="px-24 py-12 font-bold text-white rounded-full bg-primary hover:border-white hover:bg-white hover:text-primary"
                     href="https://pood.onelink.me/TunM/dee08b7c"
                     target="_blank"
                     rel="noreferrer"

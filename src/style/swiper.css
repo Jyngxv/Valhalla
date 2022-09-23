@@ -36,7 +36,7 @@
 .slider02 .swiper {
   position: absolute !important;
   z-index: 0 !important;
-  width: 418px;
+  width: 30px;
   overflow: hidden;
   left: 0;
   right: 0;
@@ -45,21 +45,19 @@
 }
 
 .slider02 .swiper-wrapper {
-  width: 418px;
+  width: 370px;
   margin: 0 auto;
+  margin-top: 16px;
 }
 
 .slider02 .swiper-slide img {
   display: block;
-  width: 418px;
+  width: 370px;
   object-fit: cover;
 }
 
 .slider02 .swiper-slide:not(.swiper-slide-active) {
-  opacity: 90%;
-}
-
-.slider03 .swiper {
+  opacity: 100%;
 }
 
 .slider04 .swiper {

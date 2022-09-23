@@ -36,7 +36,7 @@ class TabSection08 extends React.Component {
     return (
       <div className="flex flex-col w-100% md:w-100% tab02 overflow-x-auto">
         <div className="mb-32 md:mx-auto md:mb-48 lg:mb-64 xl:mb-96">
-          <ul className="flex justify-center py-16 overflow-x-scroll flex-nowrap whitespace-nowrap">
+          <ul className="flex justify-center py-16 flex-nowrap whitespace-nowrap">
             <li className={`${this.state.menu === 0 ? 'active' : ''}`} onClick={() => this.changeMenu(0)}>
               <p className="mr-16 text-base font-bold leading-loose cursor-pointer md:mr-24 md:text-md3 xl:text-md3 xl:mr-24 xl:hover:text-black">
                 오늘만 할인
