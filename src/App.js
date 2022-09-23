@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Section01 from './pages/Section01';
 import Section02 from './pages/Section02';
@@ -21,10 +22,11 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
-      <Header />
+      <Navigation />
+      {/* <Header /> */}
       <Section01 />
+      {/* <Section03 /> */}
       <Section02 />
-      <Section03 />
       <Section04 />
       <Section05 />
       <Section06 />
@@ -35,8 +37,8 @@ function App() {
       <Section11 />
       <Section12 />
       <Section13 />
-      <Section15 />
       <Section14 />
+      <Section15 />
       <Footer />
     </div>
   );

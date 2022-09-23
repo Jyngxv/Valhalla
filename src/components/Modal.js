@@ -11,18 +11,13 @@ const Modal = ({ modalOption }) => {
   return (
     <div>
       {modalOption?.show && (
-        <div className="">
-          <div className="overflow-y-hidden fixed top-0 left-0 z-[1] w-screen h-screen bg-black opacity-70" onClick={() => modalOption.onClose()}></div>
+        <div className="z-[999]">
+          <div className="overflow-y-hidden fixed top-0 left-0 z-[100] w-screen h-screen bg-black opacity-90" onClick={() => modalOption.onClose()}></div>
           <div className="fixed top-0 left-0 md:left-50% md:top-50% md:translate-x-[-50%] md:translate-y-[-50%] shadow-2xl z-[999] w-full h-screen md:w-80% lg:w-768 xl:w-960 md:h-auto overflow-y-hidden">
             <div className="relative flex flex-row">
-              <div className="hidden basis-1/3 xl:block">
-                <video autoPlay className="object-cover h-full" loop muted>
-                  <source src="video/p_video_algorithm.mp4"></source>
-                </video>
-              </div>
               <div className="h-screen px-32 py-32 overflow-y-scroll md:h-auto rounded-16 md:rounded-none lg:px-72 gradient_01 basis-full md:px-48 md:py-48 lg:py-72 md:basis-full md:overflow-y-auto">
-                <p className="mb-24 text-4xl font-bold tracking-wider md:text-6xl lg:text-7xl xl:text-8xl linear-wipe-5 font-Bebas lg:mb-24 md:mb-24">
-                  Algorithm
+                <p className="mb-24 text-4xl font-bold md:text-6xl lg:text-7xl xl:text-3xl linear-wipe-5 font-Jakarta lg:mb-24 md:mb-24">
+                  Algorithm Technology
                 </p>
                 <div className="overflow-y-scroll">
                   <p className="mb-32 text-base font-medium text-white md:text-md1">{modalOption?.title}</p>

@@ -13,8 +13,8 @@ const TitleHeadline = (props) => {
       opacity: 100,
     },
   };
-  const headline1 = classnames('text-xl md:text-3xl lg:text-5xl xl:text-4xl font-extrabold', props.textcolor1, props.textalign);
-  const headline2 = classnames('text-xl md:text-3xl lg:text-5xl xl:text-4xl font-extrabold mb-24 mt-[-4px]', props.textcolor2, props.textalign);
+  const headline1 = classnames('text-xl md:text-3xl lg:text-4xl xl:text-5xl font-regular font-Jakarta', props.textcolor1, props.textalign);
+  const headline2 = classnames('text-xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold mb-24 mt-[-4px] font-Jakarta', props.textcolor2, props.textalign);
   const body1 = classnames('text-base md:text-base lg:text-md3 xl:text-md1 font-regular whitespace-pre-wrap', props.textcolor3, props.textalign);
   const body2 = classnames('text-base md:text-base xl:text-md1 font-regular whitespace-pre-wrap', props.textcolor3, props.textalign);
   return (

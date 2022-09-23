@@ -1,6 +1,7 @@
 import React from 'react';
 import TitleHeadline from '../components/TitleHeadline';
 import { motion } from 'framer-motion';
+import '../App.css';
 
 const Section08 = () => {
   // Famer Motion 정의
@@ -16,17 +17,17 @@ const Section08 = () => {
   };
 
   return (
-    <motion.section className="relative bg-white" initial="offscreen" whileInView="onscreen" transition={{ duration: 1 }}>
-      <div className="container px-24 pt-128 md:px-48 md:py-160 lg:px-64 xl:px-0 xl:py-192">
-        <div className="mb-48 md:mb-96 xl:mb-96">
+    <motion.section className="relative" initial="offscreen" whileInView="onscreen" transition={{ duration: 1 }}>
+      <div className="container px-24 py-64 md:px-48 md:py-160 lg:px-64 xl:px-0 xl:pt-128 xl:pb-128">
+        <div className="md:mb-96 xl:mb-96">
           <TitleHeadline
             textalign="text-center"
             textcolor1="text-black"
             textcolor2="text-black"
             textcolor3="text-neutral-800"
-            c_headline1="어려움을 넘어"
-            c_headline2="맞춤형 건강관리"
-            c_body1="#생애주기별 #나의 고민별 #수면 #백신 #치아 #대소변 #목욕 #식단"
+            c_headline1="Stop looking for"
+            c_headline2="ways to care"
+            c_body1="#Lifetime #Sleep #Tooth #Vaccine #Nutrition"
           />
         </div>
         <motion.div className="relative flex-col hidden md:flex md:flex-row" initial="offscreen" whileInView="onscreen">
@@ -38,7 +39,7 @@ const Section08 = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div className="px-24 overflow-x-auto whitespace-nowrap md:hidden">
+      <div className="px-24 pb-64 overflow-x-auto whitespace-nowrap md:hidden">
         <div className="inline-block mr-24">
           <img className="w-256" src="img/p_device_health_1.png" alt=""></img>
         </div>

@@ -15,17 +15,17 @@ const Section09 = () => {
     },
   };
   return (
-    <motion.section className="relative overflow-y-hidden bg-white pt-128 xl:py-192" initial="offscreen" whileInView="onscreen">
-      <div className="container flex flex-col px-24 md:flex-row lg:px-64 xl:pb-0 md:px-48 md:py-160 xl:px-0">
+    <motion.section className="relative py-64 overflow-y-hidden bg-white xl:py-128" initial="offscreen" whileInView="onscreen">
+      <div className="container flex flex-col px-24 md:flex-row lg:px-64 xl:py-64 md:px-48 md:py-160 xl:px-0">
         <div className="mb-32 xl:mb-64 basis-full md:basis-1/2">
           <div className="mb-48">
             <TitleHeadline
               textcolor1="text-black"
               textcolor2="text-black"
               textcolor3="text-neutral-800"
-              c_headline1="공간을 넘어"
-              c_headline2="수의사가 내 옆에"
-              c_body1="상품 추천부터 관리 방법까지 손가락만으로 수의사를 만나보세요"
+              c_headline1="Anytime you"
+              c_headline2="want to talk to a vet"
+              c_body1="Start typing to meet our vet"
             />
           </div>
           <div className="mb-16">
@@ -34,7 +34,7 @@ const Section09 = () => {
                 <img src="img/p_icon_check.png" alt=""></img>
               </div>
               <div className="mt-[1px]">
-                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">무엇을 먹여야 할지 모를 때</p>
+                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">What to feed</p>
               </div>
             </motion.div>
           </div>
@@ -44,7 +44,7 @@ const Section09 = () => {
                 <img src="img/p_icon_check.png" alt=""></img>
               </div>
               <div className="mt-[1px]">
-                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">얼마나 먹여야 할지 모를 때</p>
+                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">How much to feed</p>
               </div>
             </motion.div>
           </div>
@@ -54,7 +54,7 @@ const Section09 = () => {
                 <img src="img/p_icon_check.png" alt=""></img>
               </div>
               <div className="mt-[1px]">
-                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">다이어트가 필요할 때</p>
+                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">Need to diet</p>
               </div>
             </motion.div>
           </div>
@@ -64,7 +64,7 @@ const Section09 = () => {
                 <img src="img/p_icon_check.png" alt=""></img>
               </div>
               <div className="mt-[1px]">
-                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">우리 아이 관리방법이 궁금할 때</p>
+                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">How to care</p>
               </div>
             </motion.div>
           </div>
@@ -74,7 +74,7 @@ const Section09 = () => {
                 <img src="img/p_icon_check.png" alt=""></img>
               </div>
               <div className="mt-[1px]">
-                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">고민이 가득할 때</p>
+                <p className="font-bold cursor-pointer text-neutral-800 text-md1 hover:text-primary">Something wrong</p>
               </div>
             </motion.div>
           </div>

@@ -4,15 +4,15 @@ import Review from '../components/Review';
 
 const Section13 = () => {
   return (
-    <section className="bg-white pt-128 md:py-160 xl:py-192">
+    <section className="bg-white pt-128 pb-96 md:py-160 xl:py-192">
       <div className="container px-24 md:px-48 lg:px-64 xl:px-0 xl:py-0">
         <div className="mb-24 md:mb-96 xl:mb-64">
           <TitleHeadline
             textcolor1="text-black"
             textcolor2="text-black"
             textcolor3="text-neutral-500"
-            c_headline1="반려인들의 극찬"
-            c_headline2="스토어 평점 4.9"
+            c_headline1="Trusted by petfams"
+            c_headline2="Store score 4.9"
             textalign="text-center"
           />
         </div>

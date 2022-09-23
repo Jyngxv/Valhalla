@@ -25,36 +25,33 @@ const Section03 = () => {
     );
   });
   return (
-    <section className="relative flex justify-center h-screen overflow-y-hidden">
+    <section className="relative flex justify-center overflow-y-hidden py-256">
       <motion.div className="container w-100% my-auto py-auto" initial="offscreen" whileInView="onscreen" viewport={{ once: true }}>
-        <motion.p
-          className="flex justify-center text-3xl font-extrabold leading-relaxed text-left text-white md:text-7xl lg:text-7xl xl:text-8xl"
-          variants={FadeUp}
-          transition={{ duration: 2 }}
-        >
-          <span className="linear-wipe-7">꿈같은 기술 </span> 이
-        </motion.p>
-        <motion.p
-          className="flex justify-center mb-24 text-3xl font-extrabold text-left text-white md:mb-32 md:text-7xl md:leading-tight lg:text-7xl xl:text-8xl"
-          variants={FadeUp}
-          transition={{ duration: 2, delay: 1 }}
-        >
-          <span className="linear-wipe-3"></span>바로 여기에
-        </motion.p>
+        <div className="flex flex-row">
+          <div className="flex basis-1/2">
+            <motion.p className="xl:text-5xl font-Jakarta text-primary" variants={FadeUp} transition={{ duration: 1 }}>
+              Petsonal platform
+            </motion.p>
+            <motion.p className="xl:text-5xl font-Jakarta" variants={FadeUp} transition={{ duration: 1, delay: 0.5 }}>
+              based on&nbsp;<span className="linear-wipe-7"> science</span>
+            </motion.p>
+          </div>
+          <div className="flex basis-1/2">
+            <img src="img/p_img_3layers.png"></img>
+          </div>
+        </div>
+
         <div className="flex justify-center mb-36">
           <button
             className="flex justify-center px-32 py-12 text-base font-medium text-white border rounded-full opacity-80 border-primary hover:opacity-100 z-[888]"
             onClick={onClick}
           >
-            알고리즘 알아보기
+            Learn more
           </button>
         </div>
         <Modal modalOption={modalOption} />
         <div className="">
           <div className="absolute top-0 left-0 w-screen h-screen dimmed02 z-[-1]"></div>
-          <video autoPlay className="hidden md:block nt-video z-[-2]" loop muted>
-            <source src="video/p_video_eight.mp4"></source>
-          </video>
           <div className="md:hidden absolute top-0 left-0 z-[-2] w-screen h-screen bg-center bg-cover bg-technology"></div>
         </div>
       </motion.div>
